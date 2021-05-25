@@ -221,4 +221,34 @@
       
          **注：遍历数据永远是从start->stop，step可以为负数**
       
+      **random模块**
       
+      1. 导入模块
+      
+         **提取元素**
+      
+         * `random.choice(seq)` --- 在指定的序列中随机提取一个元素
+         * `random.choices(population, k = 1)` --- 在指定序列中随机提取指定个数的元素，提取元素可能重复
+         * `random.sample(pupulation, k)` --- 在指定序列中随机提取指定个数的元素，提取元素不重复
+      
+         **生成数的随机操作**
+      
+         * `random.random()` --- 在(0,1)之间随机产生一个小数
+         * `random.randrange(start, stop=None, step=1, _int=int) ` ---- 等价于`random.choices(range(start, stop, sept))`
+         * ``random.randint(a, b)` --- 在[a, b]之间生成一个随机整数，**唯一的一个能取到右边数的**
+      
+      2. 循环嵌套
+      
+         外层表示行
+      
+         内层表示列
+      
+         `break`**只能跳出当前层的循环**
+      
+         循环嵌套的层次不建议超过3层
+      
+         * 穷举法
+      
+           eg:需要筹集20元，各需要1元，2元，5元多少张
+           
+           eg:百马百担
