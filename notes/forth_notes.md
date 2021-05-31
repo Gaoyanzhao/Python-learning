@@ -133,7 +133,7 @@
    	def func2():
    		print('a')
    		return func()
-   	retrun func2
+   	retrun func2  # func2()
    
    
    @func1  
